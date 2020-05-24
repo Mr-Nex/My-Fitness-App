@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="generator.nex.rexx.completefitness.StopWatch">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/stw1" />
+
+    <Button
+        android:id="@+id/GoButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/ic_media_play"
+        android:onClick="go" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/digi"
+        android:textColor="?attr/colorButtonNormal"
+        android:textSize="80sp" />
+
+    <Button
+        android:id="@+id/StopButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/ic_media_pause"
+        android:onClick="stop" />
+
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        android:background="@android:drawable/ic_menu_revert"
+        android:onClick="reset" />
+
+    <TextView
+        android:id="@+id/msText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/heading"
+        android:fontFamily="@font/digi"
+        android:textColor="?attr/colorButtonNormal"
+        android:textSize="40sp" />
+
+</android.widget.RelativeLayout>

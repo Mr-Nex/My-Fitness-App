@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/send"
+    tools:context="generator.nex.rexx.completefitness.Ask">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send"
+        android:src="@drawable/ic_send_black_24dp"
+        app:backgroundTint="#7f333639"
+        app:elevation="8dp"
+        app:pressedTranslationZ="12dp"
+        app:layout_anchor="@id/anchor"
+        app:layout_anchorGravity="bottom|right|end"
+        app:useCompatPadding="true"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScrollView"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/anchor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#7f333639"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sub"
+                    android:hint="Subject"
+                    android:text=""
+                    android:textSize="20sp"
+                    android:inputType="textCapSentences"
+                    app:met_baseColor="@android:color/black"
+                    app:met_floatingLabel="highlight"
+                    app:met_maxCharacters="50"
+                    app:met_primaryColor="@android:color/black"
+                    app:met_singleLineEllipsis="true"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="#7f333639"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true">
+
+                <EditText
+                    android:id="@+id/mssg"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:gravity="top|left"
+                    android:hint="Message"
+                    android:text=""
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

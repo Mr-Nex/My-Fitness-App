@@ -11,18 +11,17 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_margin="5dp"
-        android:elevation="10dp"
+        android:elevation="8dp"
         card_view:cardCornerRadius="0dp">
-
+        
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="180dp"
                 android:id="@+id/thumbnail"
-                android:clickable="true"
                 android:scaleType="fitXY"/>
             <TextView
                 android:layout_width="match_parent"
@@ -34,12 +33,22 @@
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:paddingTop="5dp"
-                android:paddingBottom="5dp"
                 android:textColor="#4c4c4c"
                 android:textSize="15dp"/>
+            
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:id="@+id/overflow"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/thumbnail"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_more_vert_black_24dp"/>
+
+
 
         </RelativeLayout>
-
+        
     </android.support.v7.widget.CardView>
 
 </LinearLayout>
