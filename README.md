@@ -6,4 +6,3 @@ Created in java, applying some fun UI elements like
 - **Collapsing Toolbar Layout**
 - **Splash Screen**, etc.
 
-**Contains a hidden treasure for Fitness Enthusiasts...**
