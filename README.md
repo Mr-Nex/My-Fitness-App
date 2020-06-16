@@ -6,3 +6,7 @@ Created in java, applying some fun UI elements like
 - **Collapsing Toolbar Layout**
 - **Splash Screen**, etc.
 
+With some important tools like - 
+- StopWatch
+- Timer, etc
+
